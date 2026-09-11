@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy — jeanchouky</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--surface:#12121a;--border:#2a2a3a;--text:#e4e4ed;--muted:#8888a0;--accent:#6c5ce7;--accent2:#a29bfe;--green:#00cec9}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;padding:3rem 1.5rem}
+main{max-width:640px;margin:0 auto}
+h1{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--text),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.4rem}
+.sub{color:var(--muted);margin-bottom:2rem}
+h2{font-size:1.1rem;margin:1.8rem 0 .5rem;color:var(--accent2)}
+p,li{color:var(--text)}
+ul{padding-left:1.2rem}
+a{color:var(--accent2);text-decoration:none}a:hover{color:var(--green)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-top:2rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy</h1>
+<p class="sub">For the "gog-jeanchouky" Google OAuth application.</p>
+
+<p>gog-jeanchouky is a personal, single-user command-line tool. It runs on a private home server and accesses exactly one Google account: its own. No other person's Google data is requested, read, or stored.</p>
+
+<h2>What it accesses</h2>
+<ul>
+<li>Gmail, Google Calendar, Google Drive and related Workspace APIs of the account that authorised it.</li>
+<li>Access is used to read and organise that account's own mail, events and files for a household assistant.</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+<li>It does not share Google user data with any third party.</li>
+<li>It does not sell data, use it for advertising, or train models on it.</li>
+<li>It does not serve other users; there is no sign-up and no public service.</li>
+</ul>
+
+<h2>Storage and retention</h2>
+<p>OAuth tokens are stored encrypted on the private server that runs the tool. Data fetched from Google is processed locally and kept only as long as the task needs it. Revoking the app's access from the Google account's security settings ends all access immediately.</p>
+
+<h2>Contact</h2>
+<p>Questions about this application: <a href="mailto:jeanchouky86@gmail.com">jeanchouky86@gmail.com</a></p>
+
+<div class="card">Google API Services User Data Policy: this application's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</div>
+</main>
+</body>
+</html>
